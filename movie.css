@@ -7,21 +7,32 @@
 }
 
 body {
-  background-color: var(--page-background-color);
-  color: var(--default-text-color);
+  /* background-color: var(--page-background-color); */
+  background-color: #2234ae;
+  background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+  color: var(--page-background-color);
 }
 
 /* NAVBAR */
 .fa-star {
-  color: var(--card-text-color);
+  color: var(--default-text-color);
 }
 
 .site-name {
-  color: var(--card-text-color);
+  color: var(--default-text-color);
 }
 #btn {
   float: right !important;
   justify-items: end;
+}
+
+#rating,
+#title {
+  color: var(--default-text-color);
+}
+
+main {
+  height: 100vh;
 }
 
 /* Movie card*/

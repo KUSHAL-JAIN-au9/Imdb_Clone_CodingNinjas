@@ -183,8 +183,9 @@
           <a href="movie.html" >
             <img
               src="${
-                movie.Poster ||
-                `https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg`
+                movie.Poster == "N/A"
+                  ? `https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg`
+                  : movie.Poster
               } "
               class="card-img-top"
               alt="..."

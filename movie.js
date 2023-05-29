@@ -24,9 +24,9 @@
       rating.innerHTML = `${data.imdbRating}/10`;
       poster.setAttribute(
         "src",
-        data.Poster == "_"
-          ? `${data.Poster}`
-          : `https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg`
+        data.Poster == "N/A"
+          ? `https://upload.wikimedia.org/wikipedia/commons/6/65/No-Image-Placeholder.svg`
+          : data.Poster
       );
       plot.innerHTML = data.Plot;
       directorsName.innerHTML = data.Director;
